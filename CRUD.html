@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CRUD</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
+<style>
+    table,
+    td{
+        border: 1px solid black;
+    }
+</style>
 
 <body>
-    <input type="text" id="name" placeholder="Name"></input>
-    <input type="text" id="age" placeholder="Age"></input>
-    <input type="text" id="email" placeholder="email"></input>
-    <button type="button" id="Submit">Submit</button>
-    <button type="button" id="Submit">Clear</button>
-    <button type="button" id="Submit">Delete</button>
-
-    <div id="table-Container"></div>
-
+    <div>
+        <input id="input1"></input>
+        <input id="input2"></input>
+        <input id="input3"></input>
+        <button id="submit">Submit</button>
+        <!-- <button id="delete">Delete</button> -->
+    </div>
+    <table id="part2" style="margin: 40px 0 0 30%;">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+            <tbody id="col"></tbody>
+            <!-- <p id="value"></p> -->
+    </table>
     <script src="CRUD.js"></script>
 </body>
+
 </html>
